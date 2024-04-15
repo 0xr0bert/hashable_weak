@@ -3,6 +3,13 @@ name = "hashable_weak"
 version = "0.1.0"
 edition = "2021"
 license = "BSD-3"
+repository = "https://git.sr.ht/~ragreener1/hashable_weak"
+authors = ["Robert Greener"]
+description = "A hashable weak pointer"
+readme = "README.md"
+keywords = ["hashmap", "hash", "pointer", "weak", "rc"]
+categories = ["data-structures"]
+exclude = [".build.yml"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
