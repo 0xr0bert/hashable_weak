@@ -1,12 +1,21 @@
 #[warn(missing_docs)]
 use std::hash::{Hash, Hasher};
 use std::ops::Deref;
-use std::rc::Weak;
+use std::rc::{Rc, Weak};
 
 /// A [Weak] pointer that can be [Hash]ed.
 pub struct HashableWeak<T> {
     /// The contained [Weak].
     pub weak: Weak<T>
+}
+
+impl<T> HashableWeak<T> {
+    /// Create a [HashableWeak] from a [Rc].
+    pub fn from_rc(rc: &Rc<T>) -> Self {
+        HashableWeak {
+            weak: Rc::downgrade(rc)
+        }
+    }
 }
 
 impl<T> PartialEq for HashableWeak<T> {
