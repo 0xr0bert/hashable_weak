@@ -1,9 +1,9 @@
 [package]
 name = "hashable_weak"
-version = "0.1.2-alpha"
+version = "0.1.2"
 edition = "2021"
 license = "BSD-3-Clause"
-repository = "https://git.sr.ht/~ragreener1/hashable_weak"
+repository = "https://github.com/0xr0bert/hashable_weak"
 authors = ["Robert Greener"]
 description = "A hashable weak pointer"
 readme = "README.md"
