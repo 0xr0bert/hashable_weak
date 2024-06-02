@@ -1,6 +1,6 @@
 [package]
 name = "hashable_weak"
-version = "0.1.2"
+version = "0.1.3-alpha"
 edition = "2021"
 license = "BSD-3-Clause"
 repository = "https://github.com/0xr0bert/hashable_weak"
